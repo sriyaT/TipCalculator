@@ -1,0 +1,60 @@
+.main-tip {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 125px;
+    padding-bottom: 125px;
+    background-image: linear-gradient(to right,  rgb(68, 32, 34), rgb(108, 0, 0));
+}
+
+.tip-calculator-main {
+    height: 555px;
+    width: 340px;
+    border: 1px solid black;
+    padding: 0px;
+    margin: 0px;
+    padding-top: 0px;
+    border-radius: 62px 39px;
+    border-radius: 20px 20px;
+    background-color: white;
+}
+
+.header-portion {
+    height: 15%;
+    width: 100%;
+    background-color: black;
+    border-radius: 20px 20px 0px 0px;
+    color: white;
+    font-size: 10px;
+    text-align: center;
+    padding-top: 1px;
+}
+
+.fill-form {
+    height: 80%;
+    width: 95%;
+    padding: 15px;
+}
+
+.calculate {
+    margin-left: 24%;
+    margin-top: 10%;
+    width: 140px;
+    height: 35px;
+    background-color: rgb(179, 0, 51);
+    color:white;
+    font-weight: bold;
+    border:none;
+    border-radius:5px ;
+    box-shadow: 0px 3px 3px 0px gray;
+}
+.split-amount{
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    padding-left:10px;
+    padding-top:10px;
+}
+.display{
+    width:100px;
+}

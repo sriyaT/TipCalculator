@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Tip Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main class="main-tip">
+        <div class="tip-calculator-main">
+            <div class="header-portion">
+                <h1 class="content">TIP CALCUATOR</h1>
+            </div>
+            <div class="fill-form">
+                    <p>
+                        How much was your bill?
+                    </p>
+                    <p>
+                        $<input type="text" name="total" id="total" class="bill-amount"
+                            placeholder="Bill Amount"></input>
+                    </p>
+                    <p>
+                        How was your service?
+                    </p>
+                    <select class="service-dropdown" id = "serviceamount">
+                        <option value="--Choose an Option -- ">--Choose an Option --</option>
+                        <option value="30">30% Outstanding</option>
+                        <option value="20">20% Good</option>
+                        <option value="15">15% It was OK</option>
+                        <option value="10">10% Bad</option>
+                        <option value="5">5% Terrible</option>
+                    </select>
+                    <p>
+                        How many people are sharing the bill?
+                    </p>
+                    <p>
+                        <input type="text" name="nop" id="nop" class="number-of-people"
+                            placeholder="Number Of People">people
+                    </p>
+                    <button class="calculate" onclick="var tax = eval(total.value *serviceamount.value/100); console.log(tax); display.value=eval((Number(total.value) + Number(tax)) / Number(nop.value)).toFixed(2);"
+                        value="CALCULATE!">CALCULATE!</button>
+                    <p>
+                        Each has to pay <input name="display" id = "display" class="display" placeholder="split-amount">$
+                    </p>
+            </div>  
+        </div>
+    </main>
+
+</body>
+
+</html>
